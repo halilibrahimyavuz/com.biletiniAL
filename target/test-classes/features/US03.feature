@@ -1,6 +1,6 @@
 
 
-     @us3  @sıralı
+     @us3  @sirali
     Feature: US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular
 
       Background: BiletiniAl anasayfaya gitmek

@@ -1,5 +1,5 @@
 
-        @us2  @sıralı   @paralel2
+        @us2  @sirali   @paralel2
        Feature: US02 Kullanici Giris İslemleri
 
            @us2tc1

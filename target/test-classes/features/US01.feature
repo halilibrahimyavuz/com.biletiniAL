@@ -1,5 +1,6 @@
 
-@deneme @us1   @sıralı   @paralel1
+@deneme @us1   @sirali
+@paralel1
 Feature: US01 Kullanici uyelik islemleri
 
   @us1tc1

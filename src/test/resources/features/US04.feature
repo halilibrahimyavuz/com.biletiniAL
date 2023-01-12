@@ -1,5 +1,5 @@
 
-    @us4   @sıralı
+    @us4   @sirali
     Feature: US04 Kullanici sinema bilet islemleri yapabilmelidir
 
         @us4tc1
