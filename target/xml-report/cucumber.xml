@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="34" time="1,127.254">
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC01 Kullanici uye olabilmeli" time="43.931">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye oldugunda Anasayfaya yonlendigi dogrulanmalidir....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC02 Kullanici Gecersiz Ad ile uye olamamalidir" time="31.264">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici adi textbox a "GecersizAdi" girer...............................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici alt kisimda ad alani gecersiz yazisinin gorundugunu dogrulamalidir..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC03 Kullanici Gecersiz Soyad ile uye olamamalidir" time="32.441">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici soyadi textbox a "GecersizSoyadi" girer.........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici alt kisimda soyad alani gecersiz yazisinin gorundugunu dogrulamalidir..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC04 Kullaniici Gecersiz E-mail ile uye olamamalidir" time="31.993">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecersizEmail" adresini girer.................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici e-mail bolumunden uyari popupinin ciktigini dogrulamalidir......passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC05 Kullanici sistemde kayitli e-posta adresi ile uye olamamalidir." time="29.839">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox kismina "GecerliEmail" adresi girer..............passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici en altta E-posta adresi kullanimda yazisinin gorundugunu dogrulamalidir..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici GSM bolumune eksik numara girerek uye olamamalidir." time="37.1">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi Textbox a "GecersizGSM" girer..................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici Sehir secmeden uye olabilmelidir." time="34.778">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir sekmesini BOS birakir.....................................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye oldugunda Anasayfaya yonlendigi dogrulanmalidir....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir." time="39.598">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "Ee55++!" girer................................passed
+* Kullanici Sifre Tekrar textboxina "Ee55++!" girer.........................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 2" time="42.817">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "aaa111===" girer..............................passed
+* Kullanici Sifre Tekrar textboxina "aaa111===" girer.......................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 3" time="42.065">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "AAA222???" girer..............................passed
+* Kullanici Sifre Tekrar textboxina "AAA222???" girer.......................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 4" time="39.381">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "BBBbbb///" girer..............................passed
+* Kullanici Sifre Tekrar textboxina "BBBbbb///" girer.......................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 5" time="39.696">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "Dd4&" girer...................................passed
+* Kullanici Sifre Tekrar textboxina "Dd4&" girer............................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC09 Kullanici Uyelik Sozlesmesini butonuna tiklamadan uye olamamalidir." time="34.687">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklamadan gecer.................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC10 Kullanici Zaten uyeyim butonuna tiklayinca oturum ac sayfasina yonlenir." time="23.019">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici sayfanin en altindaki Zaten uyeyim! Giris Yap butonuna tiklar...passed
+* Kullanici Oturum Ac sayfasina yonlenmelidir...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC01  Kullanici basarili uye girisi yapabilmelidir" time="30.134">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecerliEmail" girer.............................passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici basarili uye oldugunda Anasayfaya Login olarak yonlendigi dogrulanmalidir.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC02 Kullanici Gecersiz E-mail ile giris yapamamalidir" time="26.947">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecersizEmail" girer............................passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici basarili uye girisi yapamadigi dogrulanmalidir..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC03 Kullanici GEcersiz Sifre ile giris yapamamalidir" time="22.277">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecerliEmail" girer.............................passed
+* Kullanici Sifre bolumune "GecersizSifre" girer............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici Hatali kullanici adi veya sifre yazili popupi dogrulamalidir....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC04 Kullanici Sistemde kayitli olmayan E-mail ile giris yapamamalidir" time="23.671">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa sistemde kayitli olmayan bir email girer.........passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici E-mail adresine sahip kullanici bulunamadi uyarisi verdigini dogrular.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC05 Kullanici &quot;GecersizEmail&quot; ve &quot;GecersizSifre&quot; girerek sisteme giris yapamamalidir" time="29.011">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecersizEmail" girer............................passed
+* Kullanici Sifre bolumune "GecersizSifre" girer............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici basarili uye girisi yapamadigi dogrulanmalidir..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC06 Kullanici Hemen Uye ol butonuna tiklayinca gerekli sayfaya yonlenmelidir" time="20.66">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Hemen Uye Ol butonuna tiklar....................................passed
+* Kullanici Hemen Uye Ol sayfasina yonlendigini dogrulamalidir..............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC07 Kullanici Sifremi Unuttum butonuna basinca ilgili sayfaya yonlenmelidir" time="19.607">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Sifremi Unuttum butonuna tiklar.................................passed
+* Kullanici Sifremi Unuttum sayfasina yonlendigini dogrulamalidir...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC08 Kullanici Sifresini unutunca yeni sifre alabilmelidir" time="26.526">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Sifremi Unuttum butonuna tiklar.................................passed
+* Kullanici Sifremi Unuttum sayfasindaki Email textbox a "KayitliEmail" girer.passed
+* Kullanici Gonder butonuna tiklar..........................................passed
+* Kullanici Sifre sifirlama sayfasina yonlendigini dogrular.................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC09 Kullanici Uyeliksiz Devam Et butonuna basinca ilgili sayfaya yonlenmelidir" time="21.623">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Uyeliksiz Devam Et butonuna tiklar..............................passed
+* Kullanici Anasayfaya yonlendigini dogrular................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC01 Kullanici Sinema dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="20.613">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sinema dropdowna tiklar............................passed
+* Kullanici Sinema sayfasina yonledigini dogrular...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC02 Kullanici Tiyatro dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="26.844">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Tiyatro dropdowna tiklar...........................passed
+* Kullanici Tiyatro sayfasina yonledigini dogrular..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC03 Kullanici Muzik dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="21.357">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Muzik dropdowna tiklar.............................passed
+* Kullanici Muzik sayfasina yonledigini dogrular............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC04 Kullanici Spor dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="23.522">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Spor dropdowna tiklar..............................passed
+* Kullanici Spor sayfasina yonledigini dogrular.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC05 Kullanici Kultur ve Turizm Bakanligi dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="17.264">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Kultur ve Turizm Bakanligi dropdowna tiklar........passed
+* Kullanici Bakanligin sayfasina yonledigini dogrular.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC06 Kullanici Sehire Ozel Etkinlikler butonuna tiklayinca ilgili sayfaya yonlenmelidir." time="25.429">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sehire Ozel Etkinlikler butonuna tiklar............passed
+* Kullanici Sehire Ozel Etkinlik sayfaya yonledigini dogrular...............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC07 Kullanici Sehir Sec dropdownina tiklayip sehir secebilmeldiir." time="24.054">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sehir Sec dropdowna tiklar.........................passed
+* Kullanici acilan dropdowndan sectigi sehrin ustune tiklar.................passed
+* Kullanici anasayfadaki Sehir Sec dropdown yerinde sectigi sehrin yazdigini dogrular.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC08 Kullanici Sehir sectikten sonra iptal edebilmeldir" time="29.7">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sehir Sec dropdowna tiklar.........................passed
+* Kullanici acilan dropdowndan sectigi sehrin iptal edebilmelidir...........passed
+* Kullanici anasayfadaki Sehir Sec dropdown yerinde Sehir yazmadigini dogrular.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC09 Kullanici BiletiniAl dropdownina basinca Anasayfaya yonlenmelidir." time="19.594">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki biletinial butonuna tiklar.........................passed
+* Kullanici Anasayfaya yonlendigini dogrular................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US04 Kullanici sinema bilet islemleri yapabilmelidir" name="TC01 Kullanici Uye olmadan Sinema bileti alabilmelidir" time="102.136">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sinema dropdowna tiklar............................passed
+* Kullanici bir film secer..................................................passed
+* Kullanici BiletiniAl butonuna tiklar......................................passed
+* Kullanici Sehir Secer.....................................................passed
+* Kullanici acilan sayfadan bir Sinemaya ait seans secer....................passed
+* Kullanici Uyeliksiz Devam Et butonuna tiklar..............................passed
+* Kullanici bir koltuk secer................................................passed
+* Kullanici Simdi Odeme Yap butonuna tiklar.................................passed
+* Kullanici bilgilerini girer...............................................passed
+* Kullanici Odeme bilgilerini girer.........................................passed
+* Kullanici Kullanim sartlarini okudum butonuna tiklar......................passed
+* Kullanici Odeme Yap butonuna tiklar.......................................passed
+* Kullanici odeme ekranina geldigini dogrular...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US04 Kullanici sinema bilet islemleri yapabilmelidir" name="TC02 Kullanici Uye girisi yaparak sinema bileti alabilmelidir" time="92.295">
+        <system-out><![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sinema dropdowna tiklar............................passed
+* Kullanici bir film secer..................................................passed
+* Kullanici BiletiniAl butonuna tiklar......................................passed
+* Kullanici Sehir Secer.....................................................passed
+* Kullanici acilan sayfadan bir Sinemaya ait seans secer....................passed
+* Kullanici email textboxa "KayitliEmail" girer.............................passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici bir koltuk secer................................................passed
+* Kullanici Simdi Odeme Yap butonuna tiklar.................................passed
+* Kullanici Odeme bilgilerini girer.........................................passed
+* Kullanici Kullanim sartlarini okudum butonuna tiklar......................passed
+* Kullanici Odeme Yap butonuna tiklar.......................................passed
+* Kullanici odeme ekranina geldigini dogrular...............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
