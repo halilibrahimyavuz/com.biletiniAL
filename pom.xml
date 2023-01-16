@@ -15,6 +15,7 @@
 
 
 
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
@@ -84,6 +85,9 @@
             <artifactId>itextpdf</artifactId>
             <version>5.5.13.3</version>
         </dependency>
+
+
+
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -143,27 +147,32 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>8.2.2.jre8</version>
         </dependency>
+
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.8</version>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
         </dependency>
+
         <dependency>
             <groupId>io.github.javiercanillas</groupId>
             <artifactId>jackson-masker</artifactId>
             <version>0.9.8</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
         <dependency>
             <groupId>net.masterthought</groupId>
-            <artifactId>maven-cucumber-reporting</artifactId>
+            <artifactId>cucumber-reporting</artifactId>
             <version>5.0.0</version>
         </dependency>
+
 
 
     </dependencies>
