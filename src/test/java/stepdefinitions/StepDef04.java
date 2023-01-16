@@ -44,7 +44,7 @@ public class StepDef04 {
         @Given("Kullanici acilan sayfadan bir Sinemaya ait seans secer")
         public void kullanici_acilan_sayfadan_bir_sinemaya_ait_seans_secer() {
                 ReusableMethods.waitFor(2);
-                sinemaBiletiAl.yarınSecimi.click();
+                sinemaBiletiAl.yarinSecimi.click();
                 ReusableMethods.waitFor(2);
                 sinemaBiletiAl.seansButonu.click();
 

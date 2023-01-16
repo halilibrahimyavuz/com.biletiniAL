@@ -218,13 +218,13 @@ public class StepDef02 {
    //     ReusableMethods.waitFor(1);
    //     login.yandexEmailTextBox.sendKeys("halil.yavuz@biletinial.com");
    //     ReusableMethods.waitFor(2);
-   //     login.yandexİleriButonu.click();
+   //     login.yandexIleriButonu.click();
 //
    //     ReusableMethods.waitFor(2);
    //     login.yandexSifreTExtBox.sendKeys("Hay123456.");
-   //     login.yandexİleriButonu.click();
+   //     login.yandexIleriButonu.click();
 //
-   //     String actualText=login.yandexİlkMail.getText();
+   //     String actualText=login.yandexIlkMail.getText();
    //     System.out.println("actualText = " + actualText);
    //     String expectedText="Biletinial";
    //     System.out.println("expectedText = " + expectedText);

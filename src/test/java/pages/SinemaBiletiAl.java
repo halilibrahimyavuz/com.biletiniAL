@@ -28,7 +28,7 @@ public class SinemaBiletiAl {
     public WebElement rasgeleIlSec;
 
   @FindBy (xpath = "(//*[@class='flex fluid alignCenter justifyCenter mobile-dates'])[2]")
-  public WebElement yarınSecimi;
+  public WebElement yarinSecimi;
 
     @FindBy (xpath = "(//li[@data-timing])[2]")
     public WebElement seansButonu;

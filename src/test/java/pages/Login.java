@@ -56,13 +56,13 @@ public class Login {
     public WebElement yandexEmailTextBox;
 
     @FindBy (xpath ="//button[@id='passp:sign-in']")
-    public WebElement yandexİleriButonu;
+    public WebElement yandexIleriButonu;
 
     @FindBy (xpath ="//input[@id='passp-field-passwd']")
     public WebElement yandexSifreTExtBox;
 
     @FindBy (xpath ="//*[@id=\"js-apps-container\"]/div[2]/div[7]/div/div[3]/div[2]/div/main/div[7]/div[1]/div/div/div[3]/div/div[1]/div/div/div/a/div/span[1]/span[2]/span\n")
-    public WebElement yandexİlkMail;
+    public WebElement yandexIlkMail;
 
      @FindBy (xpath ="//a[@id='mainHolder_linkUyeliksiz']")
      public WebElement uyeliksizDevamEtButonu;
