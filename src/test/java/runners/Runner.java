@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"stepdefinitions" , "hooks"},
         tags = "@sirali",
-        dryRun = false
+        dryRun = true
 
         // step definition olusturmak icin calistirdiginda burayı true yapmayi unutma
 )
