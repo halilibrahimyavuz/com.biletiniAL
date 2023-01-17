@@ -8,7 +8,7 @@ utilities\DateUtils.class
 utilities\ReusableMethods.class
 utilities\ReadToTxt.class
 stepdefinitions\StepDef03.class
-runners\ParalelTestRunner1.class
+runners\ParalelTestrunner1.class
 utilities\ReusableMethods$2.class
 runners\Runner.class
 pages\UyeOl.class
@@ -25,4 +25,4 @@ pages\Login.class
 stepdefinitions\StepDef04.class
 utilities\DatabaseUtility.class
 utilities\WriteToTxt.class
-runners\ParalelTestRunner2.class
+runners\ParalelTestrunner2.class
