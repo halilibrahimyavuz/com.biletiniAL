@@ -174,45 +174,63 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>integration-tests</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <parallel>none</parallel>
+                            <threadCount>1</threadCount>
+                            <disableXmlReport>true</disableXmlReport>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>Runnerclass</id>
+                                <phase>integration-test</phase>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <build>
-
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M1</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <skipTests>false</skipTests>
-                    <includes>
-                        <include>**/runners/*Runner*.java</include> <!-- bunu iz elimmizle kendimmize gore duzeltiyoruz, case sensitive'dir-->
-                    </includes>
-                </configuration>
-            </plugin>
-
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
                 <configuration>
-                    <parallel>classes</parallel>
-                    <forkMode>perthread</forkMode>
-                    <threadCount>2</threadCount>
-                    <reuseForks>false</reuseForks>
-                    <argLine>-Duser.language=en</argLine>
-                    <argLine>-Xmx1024m</argLine>
-                    <argLine>-XX:MaxPermSize=256m</argLine>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                    <useFile>false</useFile>
-                    <includes>
-                        <include>**/runners/*Runner*.java</include> <!-- burada degisiklik yapılacak -->
-                    </includes>
                     <testFailureIgnore>true</testFailureIgnore>
+                    <argLine>-Xmx512m</argLine>
+                    <includes>
+                        <include>/src/test/java/runners/Runner.java</include>
+                    </includes>
                 </configuration>
             </plugin>
 
+            <!--<plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>cucumber-reporting</artifactId>
+                <version>5.7.4</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -225,35 +243,7 @@
                 </configuration>
             </plugin>
 
-
-<!--            <plugin>-->
-<!--                <groupId>net.masterthought</groupId>-->
-<!--                <artifactId>maven-cucumber-reporting</artifactId>-->
-<!--                <version>5.0.0</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>execution</id>-->
-<!--                        <phase>verify</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>generate</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <projectName>cucumber-jvm-example</projectName>-->
-<!--                            <outputDirectory>${project.build.directory}</outputDirectory>-->
-<!--                            <inputDirectory>${project.build.directory}</inputDirectory>-->
-<!--                            <jsonFiles>-->
-<!--                                <param>**/json-reports/*.json</param> &lt;!&ndash; burada degisiklik yapılacak &ndash;&gt;-->
-<!--                            </jsonFiles><classificationFiles>->-->
-<!--                            <param>sample.properties</param>-->
-<!--                            <param>other.properties</param>-->
-<!--                        </classificationFiles>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-
         </plugins>
     </build>
 
-
-</project>
+    </project>
