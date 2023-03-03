@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="34" time="1,458.194">
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC01 Kullanici uye olabilmeli" time="53.017">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye oldugunda Anasayfaya yonlendigi dogrulanmalidir....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC02 Kullanici Gecersiz Ad ile uye olamamalidir" time="30.579">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici adi textbox a "GecersizAdi" girer...............................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici alt kisimda ad alani gecersiz yazisinin gorundugunu dogrulamalidir..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC03 Kullanici Gecersiz Soyad ile uye olamamalidir" time="32.841">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici soyadi textbox a "GecersizSoyadi" girer.........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici alt kisimda soyad alani gecersiz yazisinin gorundugunu dogrulamalidir..failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.StepDef01.kullanici_alt_kisimda_soyad_alani_gecersiz_yazisinin_gorundugunu_dogrulamalidir(StepDef01.java:178)
+	at ✽.Kullanici alt kisimda soyad alani gecersiz yazisinin gorundugunu dogrulamalidir.(file:///C:/Users/Dijital%20Sahne/IdeaProjects/biletiniAl/com.biletiniAL/src/test/resources/features/US01.feature:51)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC04 Kullaniici Gecersiz E-mail ile uye olamamalidir" time="32.669">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecersizEmail" adresini girer.................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici e-mail bolumunden uyari popupinin ciktigini dogrulamalidir......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC05 Kullanici sistemde kayitli e-posta adresi ile uye olamamalidir." time="34.469">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox kismina "GecerliEmail" adresi girer..............passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici en altta E-posta adresi kullanimda yazisinin gorundugunu dogrulamalidir..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici GSM bolumune eksik numara girerek uye olamamalidir." time="40.496">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi Textbox a "GecersizGSM" girer..................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici Sehir secmeden uye olabilmelidir." time="38.206">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir sekmesini BOS birakir.....................................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye oldugunda Anasayfaya yonlendigi dogrulanmalidir....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir." time="42.05">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "Ee55++!" girer................................passed
+* Kullanici Sifre Tekrar textboxina "Ee55++!" girer.........................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 2" time="42.228">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "aaa111===" girer..............................passed
+* Kullanici Sifre Tekrar textboxina "aaa111===" girer.......................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 3" time="43.542">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "AAA222???" girer..............................passed
+* Kullanici Sifre Tekrar textboxina "AAA222???" girer.......................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 4" time="41.566">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "BBBbbb///" girer..............................passed
+* Kullanici Sifre Tekrar textboxina "BBBbbb///" girer.......................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="Kullanici uygun kosullari saglamayan sifre ile uye olamamalidir. 5" time="47.718">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliEmail" adresi girer....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textboxina "Dd4&" girer...................................passed
+* Kullanici Sifre Tekrar textboxina "Dd4&" girer............................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklar...........................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC09 Kullanici Uyelik Sozlesmesini butonuna tiklamadan uye olamamalidir." time="40.025">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici Adi textbox a "GecerliAdi" girer................................passed
+* Kullanici Soyadi textbox a "GecerliSoyadi" girer..........................passed
+* Kullanici E-Mail textbox a "GecerliMail" adresi girer.....................passed
+* Kullanici Telefon numarasi textbox a "GecerliGSM" girer...................passed
+* Kullanici Sehir dropdownundan bir sehir secer.............................passed
+* Kullanici Sifre textbox a "GecerliSifre" girer............................passed
+* Kullanici Sifre Tekrar textbox a "GecerliSifre" girer.....................passed
+* Kullanici Biletinial.com Uyelik butonuna tiklamadan gecer.................passed
+* Kullanici Uye Ol butonuna tiklar..........................................passed
+* Kullanici basarili uye olma islemi yapamadigi dogrulanmalidir.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Kullanici uyelik islemleri" name="TC10 Kullanici Zaten uyeyim butonuna tiklayinca oturum ac sayfasina yonlenir." time="72.803">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki uye Ol butonuna tiklar.............................passed
+* Kullanici sayfanin en altindaki Zaten uyeyim! Giris Yap butonuna tiklar...passed
+* Kullanici Oturum Ac sayfasina yonlenmelidir...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC01  Kullanici basarili uye girisi yapabilmelidir" time="26.979">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecerliEmail" girer.............................passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici basarili uye oldugunda Anasayfaya Login olarak yonlendigi dogrulanmalidir.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC02 Kullanici Gecersiz E-mail ile giris yapamamalidir" time="28.001">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecersizEmail" girer............................passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici basarili uye girisi yapamadigi dogrulanmalidir..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC03 Kullanici GEcersiz Sifre ile giris yapamamalidir" time="24.877">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecerliEmail" girer.............................passed
+* Kullanici Sifre bolumune "GecersizSifre" girer............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici Hatali kullanici adi veya sifre yazili popupi dogrulamalidir....passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC04 Kullanici Sistemde kayitli olmayan E-mail ile giris yapamamalidir" time="30.925">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa sistemde kayitli olmayan bir email girer.........passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici E-mail adresine sahip kullanici bulunamadi uyarisi verdigini dogrular.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC05 Kullanici &quot;GecersizEmail&quot; ve &quot;GecersizSifre&quot; girerek sisteme giris yapamamalidir" time="24.368">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici email textboxa "GecersizEmail" girer............................passed
+* Kullanici Sifre bolumune "GecersizSifre" girer............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici basarili uye girisi yapamadigi dogrulanmalidir..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC06 Kullanici Hemen Uye ol butonuna tiklayinca gerekli sayfaya yonlenmelidir" time="215.192">
+        <failure message="java.util.concurrent.TimeoutException&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-FDRDA8K', ip: '172.24.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f4b167c093aef3ccf887db415eb18d09, get {url=https://biletinial.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DIJITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65031/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f4b167c093aef3ccf887db415eb18d09" type="org.openqa.selenium.TimeoutException">
+            <![CDATA[* Kullanici "url" e gider...................................................failed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................skipped
+* Kullanici Hemen Uye Ol butonuna tiklar....................................skipped
+* Kullanici Hemen Uye Ol sayfasina yonlendigini dogrulamalidir..............skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-FDRDA8K', ip: '172.24.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4b167c093aef3ccf887db415eb18d09, get {url=https://biletinial.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DIJITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65031/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f4b167c093aef3ccf887db415eb18d09
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:83)
+	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
+	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
+	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:83)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:83)
+	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
+	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
+	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:83)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:110)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at stepdefinitions.StepDef01.kullanici_e_gider(StepDef01.java:22)
+	at ✽.Kullanici "url" e gider(file:///C:/Users/Dijital%20Sahne/IdeaProjects/biletiniAl/com.biletiniAL/src/test/resources/features/US02.feature:53)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:83)
+	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
+	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
+	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:83)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:83)
+	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
+	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
+	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
+	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
+	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:83)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:110)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at stepdefinitions.StepDef01.kullanici_e_gider(StepDef01.java:22)
+	at jdk.internal.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC07 Kullanici Sifremi Unuttum butonuna basinca ilgili sayfaya yonlenmelidir" time="21.984">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Sifremi Unuttum butonuna tiklar.................................passed
+* Kullanici Sifremi Unuttum sayfasina yonlendigini dogrulamalidir...........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC08 Kullanici Sifresini unutunca yeni sifre alabilmelidir" time="26.959">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Sifremi Unuttum butonuna tiklar.................................passed
+* Kullanici Sifremi Unuttum sayfasindaki Email textbox a "KayitliEmail" girer.passed
+* Kullanici Gonder butonuna tiklar..........................................passed
+* Kullanici Sifre sifirlama sayfasina yonlendigini dogrular.................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US02 Kullanici Giris İslemleri" name="TC09 Kullanici Uyeliksiz Devam Et butonuna basinca ilgili sayfaya yonlenmelidir" time="21.843">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Giris Yap butonuna tiklar..........................passed
+* Kullanici Uyeliksiz Devam Et butonuna tiklar..............................passed
+* Kullanici Anasayfaya yonlendigini dogrular................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC01 Kullanici Sinema dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="20.828">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sinema dropdowna tiklar............................passed
+* Kullanici Sinema sayfasina yonledigini dogrular...........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC02 Kullanici Tiyatro dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="26.483">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Tiyatro dropdowna tiklar...........................passed
+* Kullanici Tiyatro sayfasina yonledigini dogrular..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC03 Kullanici Muzik dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="20.649">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Muzik dropdowna tiklar.............................passed
+* Kullanici Muzik sayfasina yonledigini dogrular............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC04 Kullanici Spor dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="20.162">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Spor dropdowna tiklar..............................passed
+* Kullanici Spor sayfasina yonledigini dogrular.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC05 Kullanici Kultur ve Turizm Bakanligi dropdownina tiklayinca ilgili sayfaya yonlenmelidir." time="17.378">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Kultur ve Turizm Bakanligi dropdowna tiklar........passed
+* Kullanici Bakanligin sayfasina yonledigini dogrular.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC06 Kullanici Sehire Ozel Etkinlikler butonuna tiklayinca ilgili sayfaya yonlenmelidir." time="32.325">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sehire Ozel Etkinlikler butonuna tiklar............passed
+* Kullanici Sehire Ozel Etkinlik sayfaya yonledigini dogrular...............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC07 Kullanici Sehir Sec dropdownina tiklayip sehir secebilmeldiir." time="37.708">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sehir Sec dropdowna tiklar.........................passed
+* Kullanici acilan dropdowndan sectigi sehrin ustune tiklar.................passed
+* Kullanici anasayfadaki Sehir Sec dropdown yerinde sectigi sehrin yazdigini dogrular.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC08 Kullanici Sehir sectikten sonra iptal edebilmeldir" time="30.535">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sehir Sec dropdowna tiklar.........................passed
+* Kullanici acilan dropdowndan sectigi sehrin iptal edebilmelidir...........passed
+* Kullanici anasayfadaki Sehir Sec dropdown yerinde Sehir yazmadigini dogrular.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US03 Kullanici Anasayfaki dropdowlarin calistigini dogrular" name="TC09 Kullanici BiletiniAl dropdownina basinca Anasayfaya yonlenmelidir." time="19.427">
+        <system-out>
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki biletinial butonuna tiklar.........................passed
+* Kullanici Anasayfaya yonlendigini dogrular................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US04 Kullanici sinema bilet islemleri yapabilmelidir" name="TC01 Kullanici Uye olmadan Sinema bileti alabilmelidir" time="112.868">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@value='ONAYLA']&quot;}&#10;  (Session info: chrome=109.0.5414.120)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-FDRDA8K', ip: '172.24.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [25e7b572a40fb1c84f8799ac3c9ee5f6, findElement {using=xpath, value=//*[@value='ONAYLA']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DIJITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49284/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 25e7b572a40fb1c84f8799ac3c9ee5f6" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sinema dropdowna tiklar............................passed
+* Kullanici bir film secer..................................................passed
+* Kullanici BiletiniAl butonuna tiklar......................................passed
+* Kullanici Sehir Secer.....................................................passed
+* Kullanici acilan sayfadan bir Sinemaya ait seans secer....................passed
+* Kullanici Uyeliksiz Devam Et butonuna tiklar..............................passed
+* Kullanici bir koltuk secer................................................passed
+* Kullanici Simdi Odeme Yap butonuna tiklar.................................passed
+* Kullanici bilgilerini girer...............................................passed
+* Kullanici Odeme bilgilerini girer.........................................passed
+* Kullanici Kullanim sartlarini okudum butonuna tiklar......................passed
+* Kullanici Odeme Yap butonuna tiklar.......................................passed
+* Kullanici odeme ekranina geldigini dogrular...............................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@value='ONAYLA']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-FDRDA8K', ip: '172.24.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25e7b572a40fb1c84f8799ac3c9ee5f6, findElement {using=xpath, value=//*[@value='ONAYLA']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DIJITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49284/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25e7b572a40fb1c84f8799ac3c9ee5f6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at stepdefinitions.StepDef04.kullanici_odeme_ekranina_geldigini_dogrular(StepDef04.java:123)
+	at ✽.Kullanici odeme ekranina geldigini dogrular(file:///C:/Users/Dijital%20Sahne/IdeaProjects/biletiniAl/com.biletiniAL/src/test/resources/features/US04.feature:20)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US04 Kullanici sinema bilet islemleri yapabilmelidir" name="TC02 Kullanici Uye girisi yaparak sinema bileti alabilmelidir" time="104.954">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@value='ONAYLA']&quot;}&#10;  (Session info: chrome=109.0.5414.120)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-FDRDA8K', ip: '172.24.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fb335c636442d0e8f34e50293b0d4dbf, findElement {using=xpath, value=//*[@value='ONAYLA']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DIJITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49349/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fb335c636442d0e8f34e50293b0d4dbf" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[* Kullanici "url" e gider...................................................passed
+* Kullanici Anasayfadaki Sinema dropdowna tiklar............................passed
+* Kullanici bir film secer..................................................passed
+* Kullanici BiletiniAl butonuna tiklar......................................passed
+* Kullanici Sehir Secer.....................................................passed
+* Kullanici acilan sayfadan bir Sinemaya ait seans secer....................passed
+* Kullanici email textboxa "KayitliEmail" girer.............................passed
+* Kullanici Sifre bolumune "GecerliSifre" girer.............................passed
+* Kullanici Giris Yap butonuna tiklar.......................................passed
+* Kullanici bir koltuk secer................................................passed
+* Kullanici Simdi Odeme Yap butonuna tiklar.................................passed
+* Kullanici Odeme bilgilerini girer.........................................passed
+* Kullanici Kullanim sartlarini okudum butonuna tiklar......................passed
+* Kullanici Odeme Yap butonuna tiklar.......................................passed
+* Kullanici odeme ekranina geldigini dogrular...............................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@value='ONAYLA']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-FDRDA8K', ip: '172.24.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fb335c636442d0e8f34e50293b0d4dbf, findElement {using=xpath, value=//*[@value='ONAYLA']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\DIJITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49349/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb335c636442d0e8f34e50293b0d4dbf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+	at stepdefinitions.StepDef04.kullanici_odeme_ekranina_geldigini_dogrular(StepDef04.java:123)
+	at ✽.Kullanici odeme ekranina geldigini dogrular(file:///C:/Users/Dijital%20Sahne/IdeaProjects/biletiniAl/com.biletiniAL/src/test/resources/features/US04.feature:39)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

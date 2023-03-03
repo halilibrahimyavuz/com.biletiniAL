@@ -212,7 +212,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>-Xmx512m</argLine>
                     <includes>
-                        <include>/src/test/java/runners/Runner.java</include>
+                        <include>src/test/java/runners/Runner.java</include>
                     </includes>
                 </configuration>
             </plugin>
